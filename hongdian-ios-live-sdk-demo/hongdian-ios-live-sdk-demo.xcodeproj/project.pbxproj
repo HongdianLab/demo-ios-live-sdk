@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0047C3A21B95C6430036BE83 /* HDMediaModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0047C3A11B95C6430036BE83 /* HDMediaModule.framework */; };
+		008B522F1B8EFDDC00B348A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 008B522E1B8EFDDC00B348A0 /* main.m */; };
+		008B52321B8EFDDC00B348A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 008B52311B8EFDDC00B348A0 /* AppDelegate.m */; };
+		008B52491B8EFDDC00B348A0 /* hongdian_ios_live_sdk_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 008B52481B8EFDDC00B348A0 /* hongdian_ios_live_sdk_demoTests.m */; };
+		008B52531B8EFE2F00B348A0 /* MediaViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 008B52521B8EFE2F00B348A0 /* MediaViewController.mm */; };
+		008B525B1B8EFEDA00B348A0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008B525A1B8EFEDA00B348A0 /* AudioToolbox.framework */; };
+		008B525D1B8EFEE100B348A0 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008B525C1B8EFEE100B348A0 /* CoreVideo.framework */; };
+		008B525F1B8EFEEA00B348A0 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008B525E1B8EFEEA00B348A0 /* VideoToolbox.framework */; };
+		008B52611B8EFEF300B348A0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008B52601B8EFEF300B348A0 /* AVFoundation.framework */; };
+		00D9929C1B906574002E7617 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 008B523B1B8EFDDC00B348A0 /* LaunchScreen.xib */; };
+		00D9929D1B906574002E7617 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008B52361B8EFDDC00B348A0 /* Main.storyboard */; };
+		00D9929F1B9065DF002E7617 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D9929E1B9065DF002E7617 /* Images.xcassets */; };
+		00FEE2161B8FFDA300F13CC2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FEE2151B8FFDA300F13CC2 /* CoreMedia.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		008B52431B8EFDDC00B348A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 008B52211B8EFDDC00B348A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 008B52281B8EFDDC00B348A0;
+			remoteInfo = "hongdian-ios-live-sdk-demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0047C3A11B95C6430036BE83 /* HDMediaModule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HDMediaModule.framework; path = ../../hdprojectlibs/HDMediaModule.framework; sourceTree = "<group>"; };
+		008B52291B8EFDDC00B348A0 /* hongdian-ios-live-sdk-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hongdian-ios-live-sdk-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		008B522D1B8EFDDC00B348A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		008B522E1B8EFDDC00B348A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		008B52301B8EFDDC00B348A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		008B52311B8EFDDC00B348A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		008B52371B8EFDDC00B348A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		008B523C1B8EFDDC00B348A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		008B52421B8EFDDC00B348A0 /* hongdian-ios-live-sdk-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hongdian-ios-live-sdk-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		008B52471B8EFDDC00B348A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		008B52481B8EFDDC00B348A0 /* hongdian_ios_live_sdk_demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hongdian_ios_live_sdk_demoTests.m; sourceTree = "<group>"; };
+		008B52521B8EFE2F00B348A0 /* MediaViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MediaViewController.mm; sourceTree = "<group>"; };
+		008B52561B8EFE8B00B348A0 /* MediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
+		008B525A1B8EFEDA00B348A0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		008B525C1B8EFEE100B348A0 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		008B525E1B8EFEEA00B348A0 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		008B52601B8EFEF300B348A0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		00D9929E1B9065DF002E7617 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		00FEE2151B8FFDA300F13CC2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		008B52261B8EFDDC00B348A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0047C3A21B95C6430036BE83 /* HDMediaModule.framework in Frameworks */,
+				00FEE2161B8FFDA300F13CC2 /* CoreMedia.framework in Frameworks */,
+				008B52611B8EFEF300B348A0 /* AVFoundation.framework in Frameworks */,
+				008B525F1B8EFEEA00B348A0 /* VideoToolbox.framework in Frameworks */,
+				008B525D1B8EFEE100B348A0 /* CoreVideo.framework in Frameworks */,
+				008B525B1B8EFEDA00B348A0 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		008B523F1B8EFDDC00B348A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		008B52201B8EFDDC00B348A0 = {
+			isa = PBXGroup;
+			children = (
+				008B52571B8EFEA800B348A0 /* Frameworks */,
+				008B522B1B8EFDDC00B348A0 /* hongdian-ios-live-sdk-demo */,
+				008B52451B8EFDDC00B348A0 /* hongdian-ios-live-sdk-demoTests */,
+				008B522A1B8EFDDC00B348A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		008B522A1B8EFDDC00B348A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				008B52291B8EFDDC00B348A0 /* hongdian-ios-live-sdk-demo.app */,
+				008B52421B8EFDDC00B348A0 /* hongdian-ios-live-sdk-demoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		008B522B1B8EFDDC00B348A0 /* hongdian-ios-live-sdk-demo */ = {
+			isa = PBXGroup;
+			children = (
+				00D9929E1B9065DF002E7617 /* Images.xcassets */,
+				008B52561B8EFE8B00B348A0 /* MediaViewController.h */,
+				008B52301B8EFDDC00B348A0 /* AppDelegate.h */,
+				008B52311B8EFDDC00B348A0 /* AppDelegate.m */,
+				008B523B1B8EFDDC00B348A0 /* LaunchScreen.xib */,
+				008B52361B8EFDDC00B348A0 /* Main.storyboard */,
+				008B52521B8EFE2F00B348A0 /* MediaViewController.mm */,
+				008B522C1B8EFDDC00B348A0 /* Supporting Files */,
+			);
+			path = "hongdian-ios-live-sdk-demo";
+			sourceTree = "<group>";
+		};
+		008B522C1B8EFDDC00B348A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				008B522D1B8EFDDC00B348A0 /* Info.plist */,
+				008B522E1B8EFDDC00B348A0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		008B52451B8EFDDC00B348A0 /* hongdian-ios-live-sdk-demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				008B52481B8EFDDC00B348A0 /* hongdian_ios_live_sdk_demoTests.m */,
+				008B52461B8EFDDC00B348A0 /* Supporting Files */,
+			);
+			path = "hongdian-ios-live-sdk-demoTests";
+			sourceTree = "<group>";
+		};
+		008B52461B8EFDDC00B348A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				008B52471B8EFDDC00B348A0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		008B52571B8EFEA800B348A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0047C3A11B95C6430036BE83 /* HDMediaModule.framework */,
+				00FEE2151B8FFDA300F13CC2 /* CoreMedia.framework */,
+				008B52601B8EFEF300B348A0 /* AVFoundation.framework */,
+				008B525E1B8EFEEA00B348A0 /* VideoToolbox.framework */,
+				008B525C1B8EFEE100B348A0 /* CoreVideo.framework */,
+				008B525A1B8EFEDA00B348A0 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		008B52281B8EFDDC00B348A0 /* hongdian-ios-live-sdk-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 008B524C1B8EFDDC00B348A0 /* Build configuration list for PBXNativeTarget "hongdian-ios-live-sdk-demo" */;
+			buildPhases = (
+				008B52251B8EFDDC00B348A0 /* Sources */,
+				008B52261B8EFDDC00B348A0 /* Frameworks */,
+				008B52271B8EFDDC00B348A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hongdian-ios-live-sdk-demo";
+			productName = "hongdian-ios-live-sdk-demo";
+			productReference = 008B52291B8EFDDC00B348A0 /* hongdian-ios-live-sdk-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		008B52411B8EFDDC00B348A0 /* hongdian-ios-live-sdk-demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 008B524F1B8EFDDC00B348A0 /* Build configuration list for PBXNativeTarget "hongdian-ios-live-sdk-demoTests" */;
+			buildPhases = (
+				008B523E1B8EFDDC00B348A0 /* Sources */,
+				008B523F1B8EFDDC00B348A0 /* Frameworks */,
+				008B52401B8EFDDC00B348A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				008B52441B8EFDDC00B348A0 /* PBXTargetDependency */,
+			);
+			name = "hongdian-ios-live-sdk-demoTests";
+			productName = "hongdian-ios-live-sdk-demoTests";
+			productReference = 008B52421B8EFDDC00B348A0 /* hongdian-ios-live-sdk-demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		008B52211B8EFDDC00B348A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = snackbaby;
+				TargetAttributes = {
+					008B52281B8EFDDC00B348A0 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					008B52411B8EFDDC00B348A0 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 008B52281B8EFDDC00B348A0;
+					};
+				};
+			};
+			buildConfigurationList = 008B52241B8EFDDC00B348A0 /* Build configuration list for PBXProject "hongdian-ios-live-sdk-demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 008B52201B8EFDDC00B348A0;
+			productRefGroup = 008B522A1B8EFDDC00B348A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				008B52281B8EFDDC00B348A0 /* hongdian-ios-live-sdk-demo */,
+				008B52411B8EFDDC00B348A0 /* hongdian-ios-live-sdk-demoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		008B52271B8EFDDC00B348A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D9929F1B9065DF002E7617 /* Images.xcassets in Resources */,
+				00D9929C1B906574002E7617 /* LaunchScreen.xib in Resources */,
+				00D9929D1B906574002E7617 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		008B52401B8EFDDC00B348A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		008B52251B8EFDDC00B348A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				008B52531B8EFE2F00B348A0 /* MediaViewController.mm in Sources */,
+				008B52321B8EFDDC00B348A0 /* AppDelegate.m in Sources */,
+				008B522F1B8EFDDC00B348A0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		008B523E1B8EFDDC00B348A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				008B52491B8EFDDC00B348A0 /* hongdian_ios_live_sdk_demoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		008B52441B8EFDDC00B348A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 008B52281B8EFDDC00B348A0 /* hongdian-ios-live-sdk-demo */;
+			targetProxy = 008B52431B8EFDDC00B348A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		008B52361B8EFDDC00B348A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				008B52371B8EFDDC00B348A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		008B523B1B8EFDDC00B348A0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				008B523C1B8EFDDC00B348A0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		008B524A1B8EFDDC00B348A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		008B524B1B8EFDDC00B348A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		008B524D1B8EFDDC00B348A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/snackbaby/dian/hdprojectlibs,
+				);
+				INFOPLIST_FILE = "hongdian-ios-live-sdk-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Debug;
+		};
+		008B524E1B8EFDDC00B348A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/snackbaby/dian/hdprojectlibs,
+				);
+				INFOPLIST_FILE = "hongdian-ios-live-sdk-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Release;
+		};
+		008B52501B8EFDDC00B348A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "hongdian-ios-live-sdk-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hongdian-ios-live-sdk-demo.app/hongdian-ios-live-sdk-demo";
+			};
+			name = Debug;
+		};
+		008B52511B8EFDDC00B348A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "hongdian-ios-live-sdk-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hongdian-ios-live-sdk-demo.app/hongdian-ios-live-sdk-demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		008B52241B8EFDDC00B348A0 /* Build configuration list for PBXProject "hongdian-ios-live-sdk-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				008B524A1B8EFDDC00B348A0 /* Debug */,
+				008B524B1B8EFDDC00B348A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		008B524C1B8EFDDC00B348A0 /* Build configuration list for PBXNativeTarget "hongdian-ios-live-sdk-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				008B524D1B8EFDDC00B348A0 /* Debug */,
+				008B524E1B8EFDDC00B348A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		008B524F1B8EFDDC00B348A0 /* Build configuration list for PBXNativeTarget "hongdian-ios-live-sdk-demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				008B52501B8EFDDC00B348A0 /* Debug */,
+				008B52511B8EFDDC00B348A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 008B52211B8EFDDC00B348A0 /* Project object */;
+}
