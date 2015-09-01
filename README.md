@@ -10,6 +10,8 @@
   * CoreMedia.framework
   * AVFoundation.framework
 
+  * HDMediaModule.framework (红点SDK，该framework从此处[下载]( http://media-sdk.b0.upaiyun.com/ios-live-sdk/HDMediaModule.framework.zip))
+
 ### Manually ####
 
 
@@ -21,12 +23,14 @@
 
 #### 初始化配置 ####
 
+    [HDMediaModule sharedInstance] 调用此方法初始化SDK内部配置
+
 #### 音频 ####
   对于音频直播，都是在一个直播间内，录制者上传，需要传入录制者的id，收听者也需要传入自己的id
   
  开始音频录制并上传至服务器
  
-     [[HDMediaModule sharedInstance] startAudioRecordWithToken:nil roomId:_roomIdTextField.text myUserId:_selfIdTextField.text];
+     [[HDMediaModule sharedInstance] startAudioRecordWithRoomId:_roomIdTextField.text myUserId:_selfIdTextField.text];
  
  结束音频录制
  
@@ -34,11 +38,11 @@
  
  开始从服务器获取音频数据并播放
  
-     [[HDMediaModule sharedInstance] startAudioPlayWithToken:nil roomId:_roomIdTextField.text userId:_userIdTextField.text myUserId:_selfIdTextField.text];
+     [[HDMediaModule sharedInstance] startAudioPlayWithRoomId:_roomIdTextField.text userId:_userIdTextField.text myUserId:_selfIdTextField.text];
  
  停止音频播放
  
-     [[HDMediaModule sharedInstance] stopAudioPlayWithToken:nil roomId:_roomIdTextField.text userId:_userIdTextField.text];
+     [[HDMediaModule sharedInstance] stopAudioPlayWithRoomId:_roomIdTextField.text userId:_userIdTextField.text];
 
 #### 视频 ####
 
@@ -57,7 +61,7 @@
   
   3. 开始录制：
   
-         [[HDMediaModule sharedInstance] startVideoRecordWithToken:nil roomId:_roomIdTextField.text myUserId:_selfIdTextField.text];
+         [[HDMediaModule sharedInstance] startVideoRecordWithRoomId:_roomIdTextField.text myUserId:_selfIdTextField.text];
   
   4. 结束录制： 
   
@@ -76,11 +80,11 @@
   
   3. 开始播放：
   
-         [[HDMediaModule sharedInstance] startVideoPlayWithToken:nil roomId:_roomIdTextField.text userId:_userIdTextField.text myUserId:_selfIdTextField.text];
+         [[HDMediaModule sharedInstance] startVideoPlayWithRoomId:_roomIdTextField.text userId:_userIdTextField.text myUserId:_selfIdTextField.text];
   
   4. 停止播放：
   
-         [[HDMediaModule sharedInstance] stopVideoPlayWithToken:nil roomId:_roomIdTextField.text userId:_userIdTextField.text];
+         [[HDMediaModule sharedInstance] stopVideoPlayWithRoomId:_roomIdTextField.text userId:_userIdTextField.text];
 
 举个例子：在roomid=123，userid=456录制视频，userid=789收看，那么调用[HDMediaModule startVideoPlayWithToken:nil roomId:@“123” userId:@“456” myUserId:@“789”];
 
