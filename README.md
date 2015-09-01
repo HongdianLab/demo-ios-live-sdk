@@ -11,7 +11,8 @@
   * CoreMedia.framework
   * AVFoundation.framework
 
-  * HDMediaModule.framework (红点SDK，该framework从此处[下载]( http://media-sdk.b0.upaiyun.com/ios-live-sdk/HDMediaModule.framework.zip))
+
+HDMediaModule.framework (红点SDK，该framework从此处[下载]( http://media-sdk.b0.upaiyun.com/ios-live-sdk/HDMediaModule.framework.zip))
 
 ### Manually ####
 
