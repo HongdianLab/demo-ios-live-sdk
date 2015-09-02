@@ -25,6 +25,7 @@ HDMediaModule.framework (红点SDK，该framework从此处[下载]( http://media
 
 #### 初始化配置 ####
 
+    [[HDMediaModule sharedInstance] setAppId:APPID];
     [HDMediaModule sharedInstance] 调用此方法初始化SDK内部配置
 
 #### 音频 ####
