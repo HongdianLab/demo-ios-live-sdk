@@ -12,7 +12,7 @@
   * AVFoundation.framework
 
 
-HDMediaModule.framework (红点SDK，该framework从此处[下载]( http://media-sdk.b0.upaiyun.com/ios-live-sdk/HDMediaModule.framework.zip))
+HDMediaModule.framework (红点SDK，该Framework从此处[下载]( http://media-sdk.b0.upaiyun.com/ios-live-sdk/HDMediaModule.framework.zip))
 
 ### Manually ####
 
@@ -25,27 +25,37 @@ HDMediaModule.framework (红点SDK，该framework从此处[下载]( http://media
 
 #### 初始化配置 ####
 
+    初始化SDK内部配置，此方法只有第一次调用的时候生效，
+    AppId:用于安全校验,必须设置，否则无法实际录制或播放
+
     [[HDMediaModule sharedInstance] setAppId:APPID];
-    [HDMediaModule sharedInstance] 调用此方法初始化SDK内部配置
+
 
 #### 音频 ####
   对于音频直播，都是在一个直播间内，录制者上传，需要传入录制者的id，收听者也需要传入自己的id
   
- 开始音频录制并上传至服务器
+  1.开始音频录制并上传至服务器
  
      [[HDMediaModule sharedInstance] startAudioRecordWithRoomId:_roomIdTextField.text myUserId:_selfIdTextField.text];
  
- 结束音频录制
+  2.结束音频录制
  
      [[HDMediaModule sharedInstance] stopAudioRecord];
  
- 开始从服务器获取音频数据并播放
+  1.开始从服务器获取音频数据并播放
  
+     播放一个人的音频：
      [[HDMediaModule sharedInstance] startAudioPlayWithRoomId:_roomIdTextField.text userId:_userIdTextField.text myUserId:_selfIdTextField.text];
+     播放多个人的音频：
+     [[HDMediaModule sharedInstance] startAudioPlayWithRoomId:roomID userIdList:array myUserId:selfID];
+
  
- 停止音频播放
+   2.停止音频播放
  
+     停止一个人的音频：
      [[HDMediaModule sharedInstance] stopAudioPlayWithRoomId:_roomIdTextField.text userId:_userIdTextField.text];
+     停止所有人的音频：
+     [[HDMediaModule sharedInstance] stopAudioPlay];
 
 #### 视频 ####
 
@@ -83,12 +93,19 @@ HDMediaModule.framework (红点SDK，该framework从此处[下载]( http://media
   
   3. 开始播放：
   
-         [[HDMediaModule sharedInstance] startVideoPlayWithRoomId:_roomIdTextField.text userId:_userIdTextField.text myUserId:_selfIdTextField.text];
-  
+        播放一个人的视频：
+        [[HDMediaModule sharedInstance] startVideoPlayWithRoomId:_roomIdTextField.text userId:_userIdTextField.text myUserId:_selfIdTextField.text];
+        播放多人的视频：
+        [[HDMediaModule sharedInstance] startVideoPlayWithRoomId:roomID userIdList:array myUserId:selfID];
+ 
   4. 停止播放：
   
-         [[HDMediaModule sharedInstance] stopVideoPlayWithRoomId:_roomIdTextField.text userId:_userIdTextField.text];
-
+        停止一个人的视频：
+        [[HDMediaModule sharedInstance] stopVideoPlayWithRoomId:_roomIdTextField.text userId:_userIdTextField.text];
+        停止所有人的视频：
+        [[HDMediaModule sharedInstance] stopVideoPlay];
+ 
+ 
 举个例子：在roomid=123，userid=456录制视频，userid=789收看，那么调用[HDMediaModule startVideoPlayWithToken:nil roomId:@“123” userId:@“456” myUserId:@“789”];
 
 注意：停止录制或结束播放后视图自动解绑，重新开始录制或播放需要重新绑定视图
@@ -100,8 +117,36 @@ HDMediaModule.framework (红点SDK，该framework从此处[下载]( http://media
   开启/关闭闪光灯
   
      [[HDMediaModule sharedInstance] changeTorchStatus];
+     
+  获取录制者的音量
+  
+    [[HDMediaModule sharedInstance] getCurrentVolumesWithUserId:userId];   
+     
+ 其他：
+ 
+    
+    1、开始自动播放某房间的所有流。
+    声音流全播，播放所有绑定view的视频流。如果超过播放器可以播放的上限（上限是10个），则按数据到达的时间顺序播放。
+    因为视频也有声音部分，有view的视频优先，会挤掉数据到达时间相对靠后的纯声音流。
+    
+     -(void)startAutoPlayRoom:(NSString *)roomId;
+     
+    2、停止自动播放某房间的所有流
+    此操作并不影响已经在播放的流，只影响新到达的流
+ 
+    -(void)stopAutoPlayRoom:(NSString *)roomId;
+    
+    3、返回当前所在房间信息
+    房间信息包括：房间号，是否自动播放，当前流的数量和每个流的信息
+    流的信息包括：用户名，是否是视频，是否正在播放，缓冲大小
+    
+    -(struct HDRoomStatus)getCurrentRoomStatus;
 
-
+    4、设置监听函数，监听房间内信息变化
+	roomStatusListener 监听的回调block，具体参数格式见类型说明
+	比如：视频第一帧到达的通知就可以通过这个方法获取
+	
+	-(void)setRoomStatusListener:(HDRoomStatusListener) roomStatusListener;
 
 ## Requirements ##
 
