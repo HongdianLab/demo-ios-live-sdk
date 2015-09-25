@@ -106,7 +106,7 @@ HDMediaModule.framework (红点SDK，该Framework从此处[下载]( http://media
         [[HDMediaModule sharedInstance] stopVideoPlay];
  
  
-举个例子：在roomid=123，userid=456录制视频，userid=789收看，那么调用[HDMediaModule startVideoPlayWithToken:nil roomId:@“123” userId:@“456” myUserId:@“789”];
+举个例子：在roomid=123，userid=456录制视频，userid=789收看，那么调用[HDMediaModule startVideoPlayWithRoomId:@“123” userId:@“456” myUserId:@“789”];
 
 注意：停止录制或结束播放后视图自动解绑，重新开始录制或播放需要重新绑定视图
   
