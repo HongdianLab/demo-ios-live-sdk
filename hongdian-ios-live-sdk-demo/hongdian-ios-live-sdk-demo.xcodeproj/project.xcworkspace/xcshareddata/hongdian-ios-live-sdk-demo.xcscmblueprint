@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A72714EB2C982903EE97B66D4190A419B3CDB7C2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B46038DC99B806DACDE12485AA96E7E5C0A45E78" : 0,
+    "CDA3F76D436A6E4CC88958CAEC9D505FC138D6E1" : 0,
+    "A72714EB2C982903EE97B66D4190A419B3CDB7C2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D3A04B39-D025-40FE-AA1F-07DE9D29C76E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B46038DC99B806DACDE12485AA96E7E5C0A45E78" : "hdprojectlibs\/",
+    "CDA3F76D436A6E4CC88958CAEC9D505FC138D6E1" : "ios-live-sdk\/",
+    "A72714EB2C982903EE97B66D4190A419B3CDB7C2" : "demo-ios-live-sdk\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "hongdian-ios-live-sdk-demo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "hongdian-ios-live-sdk-demo\/hongdian-ios-live-sdk-demo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/HongdianLab\/demo-ios-live-sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A72714EB2C982903EE97B66D4190A419B3CDB7C2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitlab.dian.fm:ios\/hdprojectlibs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B46038DC99B806DACDE12485AA96E7E5C0A45E78"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/HongdianLab\/ios-live-sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CDA3F76D436A6E4CC88958CAEC9D505FC138D6E1"
+    }
+  ]
+}

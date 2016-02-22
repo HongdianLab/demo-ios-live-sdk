@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0047C3A21B95C6430036BE83 /* HDMediaModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0047C3A11B95C6430036BE83 /* HDMediaModule.framework */; };
 		008B522F1B8EFDDC00B348A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 008B522E1B8EFDDC00B348A0 /* main.m */; };
 		008B52321B8EFDDC00B348A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 008B52311B8EFDDC00B348A0 /* AppDelegate.m */; };
 		008B52491B8EFDDC00B348A0 /* hongdian_ios_live_sdk_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 008B52481B8EFDDC00B348A0 /* hongdian_ios_live_sdk_demoTests.m */; };
@@ -20,6 +19,7 @@
 		00D9929D1B906574002E7617 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008B52361B8EFDDC00B348A0 /* Main.storyboard */; };
 		00D9929F1B9065DF002E7617 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D9929E1B9065DF002E7617 /* Images.xcassets */; };
 		00FEE2161B8FFDA300F13CC2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FEE2151B8FFDA300F13CC2 /* CoreMedia.framework */; };
+		A7FA6C7C1C7B103D00F13A3D /* HDMediaModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7FA6C7B1C7B103D00F13A3D /* HDMediaModule.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +33,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0047C3A11B95C6430036BE83 /* HDMediaModule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HDMediaModule.framework; path = ../../hdprojectlibs/HDMediaModule.framework; sourceTree = "<group>"; };
 		008B52291B8EFDDC00B348A0 /* hongdian-ios-live-sdk-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hongdian-ios-live-sdk-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		008B522D1B8EFDDC00B348A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		008B522E1B8EFDDC00B348A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		008B52601B8EFEF300B348A0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		00D9929E1B9065DF002E7617 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		00FEE2151B8FFDA300F13CC2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A7FA6C7B1C7B103D00F13A3D /* HDMediaModule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HDMediaModule.framework; path = "../../ios-live-sdk/HDMediaModule.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0047C3A21B95C6430036BE83 /* HDMediaModule.framework in Frameworks */,
+				A7FA6C7C1C7B103D00F13A3D /* HDMediaModule.framework in Frameworks */,
 				00FEE2161B8FFDA300F13CC2 /* CoreMedia.framework in Frameworks */,
 				008B52611B8EFEF300B348A0 /* AVFoundation.framework in Frameworks */,
 				008B525F1B8EFEEA00B348A0 /* VideoToolbox.framework in Frameworks */,
@@ -141,7 +141,7 @@
 		008B52571B8EFEA800B348A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0047C3A11B95C6430036BE83 /* HDMediaModule.framework */,
+				A7FA6C7B1C7B103D00F13A3D /* HDMediaModule.framework */,
 				00FEE2151B8FFDA300F13CC2 /* CoreMedia.framework */,
 				008B52601B8EFEF300B348A0 /* AVFoundation.framework */,
 				008B525E1B8EFEEA00B348A0 /* VideoToolbox.framework */,
@@ -200,6 +200,7 @@
 				TargetAttributes = {
 					008B52281B8EFDDC00B348A0 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 6X38Y7DP6D;
 					};
 					008B52411B8EFDDC00B348A0 = {
 						CreatedOnToolsVersion = 6.4;
@@ -380,9 +381,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/wangzi-apple/workSpaceForHD/ios-live-sdk",
 					"$(inherited)",
-					/Users/snackbaby/dian/hdprojectlibs,
 				);
 				INFOPLIST_FILE = "hongdian-ios-live-sdk-demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -390,6 +394,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
@@ -399,15 +404,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/wangzi-apple/workSpaceForHD/ios-live-sdk",
 					"$(inherited)",
-					/Users/snackbaby/dian/hdprojectlibs,
 				);
 				INFOPLIST_FILE = "hongdian-ios-live-sdk-demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;
