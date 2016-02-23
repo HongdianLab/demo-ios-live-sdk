@@ -10,7 +10,7 @@
 
 #import <HDMediaModule/HDMediaModule.h>
 
-#define APPID @"hongdiantesttest"
+#define APPID @"hongdianhongdian"
 
 @implementation MediaViewController
 {
