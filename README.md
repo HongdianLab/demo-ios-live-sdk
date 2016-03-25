@@ -14,7 +14,7 @@
 请使用libc++(LLVM C++ standard library with C++11 support)作为C++的库，
 这也是苹果默认的C++库，使用libstdc++(GNU C++ standard library)会报错。
 
-HDMediaModule.framework (红点SDK，该Framework从此处[下载]( http://media-sdk.b0.upaiyun.com/ios-live-sdk/HDMediaModule.framework.20160222.zip))
+HDMediaModule.framework (红点SDK，该Framework从此处[下载]( http://media-sdk.b0.upaiyun.com/ios-live-sdk/HDMediaModule.framework.20160325.zip))
 
 ### Manually ####
 
